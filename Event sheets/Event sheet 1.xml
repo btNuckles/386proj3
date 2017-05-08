@@ -626,5 +626,15 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="410814346238510">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="560848001003987" type="monster1">
+                    <param id="0" name="Object">laser</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="345157703654576" type="monster1" />
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
