@@ -10,6 +10,7 @@
     <unique-id>k5xryco3p8fx</unique-id>
     <saved-with-version>24400</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
@@ -20,6 +21,7 @@
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
         <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
         <behavior author="Scirra" id="LOS" version="1">Line Of Sight</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
     <used-effects />
@@ -27,8 +29,8 @@
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
     </configurations>
     <window-size>
-        <width>854</width>
-        <height>480</height>
+        <width>560</width>
+        <height>420</height>
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
@@ -273,7 +275,7 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="715411905163380" speed="5">
-                    <frame duration="1" hotspotX="0.471667" hotspotY="0.356667" original-source="C:\Users\gene\Downloads\game_art\game_art\Player1_Ship.png">
+                    <frame duration="1" hotspotX="0.47" hotspotY="0.123333" original-source="C:\Users\gene\Downloads\game_art\game_art\Player1_Ship.png">
                         <collision-poly>
                             <point x="0.23" y="0.32" />
                             <point x="0.47" y="0.113333" />
@@ -398,12 +400,12 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="657122054591102" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\gene\Downloads\game_art\game_art\Player1_Bullet.png">
+                    <frame duration="1" hotspotX="0.9" hotspotY="0.1" original-source="C:\Users\gene\Downloads\game_art\game_art\Player1_Bullet.png">
                         <collision-poly>
-                            <point x="0.21" y="0.32" />
-                            <point x="0.44" y="0.06" />
-                            <point x="0.63" y="0.32" />
-                            <point x="0.44" y="0.84" />
+                            <point x="0.68" y="0.21" />
+                            <point x="0.94" y="0.44" />
+                            <point x="0.68" y="0.63" />
+                            <point x="0.16" y="0.44" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -557,6 +559,46 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Sprite" sid="401128419869996">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="869897035769974" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Camera1" sid="251128602824066">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="ScrollTo" sid="665635233667780">
+                    <behavior id="scrollto" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="836129286666035" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Camera2" sid="509218428079491">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="543563024483847" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Camera3" sid="460635759730962">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="346807678306304" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Audio" sid="251034427566901">
+            <plugin id="Audio" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -568,9 +610,41 @@
     <global-instances>
         <global-instance type="Mouse" uid="151" />
         <global-instance type="Keyboard" uid="152" />
+        <global-instance type="Audio" uid="196">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
     </global-instances>
-    <sounds-folder />
-    <music-folder />
+    <sounds-folder>
+        <file name="Level1_Enemy_Death.m4a" />
+        <file name="Level1_Enemy_Death.ogg" />
+        <file name="Level2_Enemy_Bullet_Sound.m4a" />
+        <file name="Level2_Enemy_Bullet_Sound.ogg" />
+        <file name="Level2_Enemy_Death.m4a" />
+        <file name="Level2_Enemy_Death.ogg" />
+        <file name="Level3_Enemy_Bullet_Sound.m4a" />
+        <file name="Level3_Enemy_Bullet_Sound.ogg" />
+        <file name="Level3_Enemy_Death_Sound.m4a" />
+        <file name="Level3_Enemy_Death_Sound.ogg" />
+        <file name="Player1_Death_Sound.m4a" />
+        <file name="Player1_Death_Sound.ogg" />
+        <file name="Player1_Laser_Sound.m4a" />
+        <file name="Player1_Laser_Sound.ogg" />
+    </sounds-folder>
+    <music-folder>
+        <file name="It Happened (Game Song).m4a" />
+        <file name="It Happened (Game Song).ogg" />
+    </music-folder>
     <files-folder>
         <file-folder name="Icons">
             <file name="icon-16.png" />

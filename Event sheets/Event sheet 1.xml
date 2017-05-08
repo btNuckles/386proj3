@@ -12,6 +12,9 @@
                     <param id="0" name="X">Mouse.X</param>
                     <param id="1" name="Y">Mouse.Y</param>
                 </action>
+                <action id="-18" name="Rotate clockwise" sid="589377917241698" type="player">
+                    <param id="0" name="Degrees">90</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="730388323494647">
@@ -26,6 +29,12 @@
                     <param id="0" name="Object">laser</param>
                     <param id="1" name="Layer">1</param>
                     <param id="2" name="Image point">0</param>
+                </action>
+                <action id="0" name="Play" sid="146073398413396" type="Audio">
+                    <param id="0" name="Audio file">Player1_Laser_Sound</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-20</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
                 </action>
             </actions>
         </event-block>
@@ -46,6 +55,12 @@
                     <param id="0" name="Instance variable">health</param>
                     <param id="1" name="Value">laser.damage</param>
                 </action>
+                <action id="0" name="Play" sid="812244750177987" type="Audio">
+                    <param id="0" name="Audio file">Level1_Enemy_Death</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-30</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="390587613098096">
@@ -64,6 +79,12 @@
                 <action id="-12" name="Subtract from" sid="615179744291521" type="monster2">
                     <param id="0" name="Instance variable">health</param>
                     <param id="1" name="Value">laser.damage</param>
+                </action>
+                <action id="0" name="Play" sid="571166731847833" type="Audio">
+                    <param id="0" name="Audio file">Level2_Enemy_Death</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-30</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
                 </action>
             </actions>
         </event-block>
@@ -84,6 +105,12 @@
                     <param id="0" name="Instance variable">health</param>
                     <param id="1" name="Value">laser.damage</param>
                 </action>
+                <action id="0" name="Play" sid="301533421232687" type="Audio">
+                    <param id="0" name="Audio file">Level3_Enemy_Death_Sound</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-30</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="927362326814740">
@@ -100,21 +127,6 @@
                 <action id="-22" name="Set angle toward position" sid="842938981039067" type="monster1">
                     <param id="0" name="X">player.X</param>
                     <param id="1" name="Y">player.Y</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="412366548016164">
-            <conditions>
-                <condition id="0" name="On click" sid="419367698676796" type="Mouse">
-                    <param id="0" name="Mouse button">0</param>
-                    <param id="1" name="Click type">0</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="0" name="Spawn another object" sid="250525968948564" type="player">
-                    <param id="0" name="Object">laser</param>
-                    <param id="1" name="Layer">1</param>
-                    <param id="2" name="Image point">0</param>
                 </action>
             </actions>
         </event-block>
@@ -183,12 +195,18 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="-9" name="Destroy" sid="263371848445051" type="player" />
+                <action id="0" name="Play" sid="335091236435054" type="Audio">
+                    <param id="0" name="Audio file">Player1_Death_Sound</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
                 <action id="0" name="Spawn another object" sid="153709128985708" type="player">
                     <param id="0" name="Object">explosion</param>
                     <param id="1" name="Layer">1</param>
                     <param id="2" name="Image point">0</param>
                 </action>
+                <action id="-9" name="Destroy" sid="263371848445051" type="player" />
             </actions>
         </event-block>
         <event-block sid="222336863802804">
@@ -198,12 +216,18 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="-9" name="Destroy" sid="389971318437603" type="player" />
+                <action id="0" name="Play" sid="903571918667813" type="Audio">
+                    <param id="0" name="Audio file">Player1_Death_Sound</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
                 <action id="0" name="Spawn another object" sid="879427029347905" type="player">
                     <param id="0" name="Object">explosion</param>
                     <param id="1" name="Layer">1</param>
                     <param id="2" name="Image point">0</param>
                 </action>
+                <action id="-9" name="Destroy" sid="389971318437603" type="player" />
             </actions>
         </event-block>
         <event-block sid="283283920586549">
@@ -213,12 +237,18 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="-9" name="Destroy" sid="128141225878969" type="player" />
+                <action id="0" name="Play" sid="348697054819660" type="Audio">
+                    <param id="0" name="Audio file">Player1_Death_Sound</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
                 <action id="0" name="Spawn another object" sid="176787345712792" type="player">
                     <param id="0" name="Object">explosion</param>
                     <param id="1" name="Layer">1</param>
                     <param id="2" name="Image point">0</param>
                 </action>
+                <action id="-9" name="Destroy" sid="128141225878969" type="player" />
             </actions>
         </event-block>
         <event-block sid="645372937693678">
@@ -228,12 +258,18 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="-9" name="Destroy" sid="511893695072610" type="player" />
+                <action id="0" name="Play" sid="950647381018314" type="Audio">
+                    <param id="0" name="Audio file">Player1_Death_Sound</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
                 <action id="0" name="Spawn another object" sid="697896961624322" type="player">
                     <param id="0" name="Object">explosion</param>
                     <param id="1" name="Layer">1</param>
                     <param id="2" name="Image point">0</param>
                 </action>
+                <action id="-9" name="Destroy" sid="511893695072610" type="player" />
             </actions>
         </event-block>
         <event-block sid="996665319319154">
@@ -243,12 +279,18 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="-9" name="Destroy" sid="815616464552117" type="player" />
+                <action id="0" name="Play" sid="424168479881658" type="Audio">
+                    <param id="0" name="Audio file">Player1_Death_Sound</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
                 <action id="0" name="Spawn another object" sid="507331576038374" type="player">
                     <param id="0" name="Object">explosion</param>
                     <param id="1" name="Layer">1</param>
                     <param id="2" name="Image point">0</param>
                 </action>
+                <action id="-9" name="Destroy" sid="815616464552117" type="player" />
             </actions>
         </event-block>
         <comment></comment>
@@ -290,6 +332,12 @@
                     <param id="1" name="Layer">1</param>
                     <param id="2" name="Image point">0</param>
                 </action>
+                <action id="0" name="Play" sid="212232905405804" type="Audio">
+                    <param id="0" name="Audio file">Level3_Enemy_Bullet_Sound</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-20</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="699541925576840">
@@ -306,6 +354,12 @@
                     <param id="0" name="Object">monster3laser</param>
                     <param id="1" name="Layer">1</param>
                     <param id="2" name="Image point">0</param>
+                </action>
+                <action id="0" name="Play" sid="682325201476290" type="Audio">
+                    <param id="0" name="Audio file">It Happened (Game Song)</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-20</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
                 </action>
             </actions>
         </event-block>
@@ -634,6 +688,36 @@
             </conditions>
             <actions>
                 <action id="-9" name="Destroy" sid="345157703654576" type="monster1" />
+                <action id="0" name="Play" sid="575839606500742" type="Audio">
+                    <param id="0" name="Audio file">Level1_Enemy_Death</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-30</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="433037445046295">
+            <conditions>
+                <condition id="-18" name="On created" sid="541947935542975" type="laser" />
+            </conditions>
+            <actions>
+                <action id="-22" name="Set angle toward position" sid="500178818404002" type="laser">
+                    <param id="0" name="X">Mouse.X</param>
+                    <param id="1" name="Y">Mouse.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="488005643598685">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="577982222120886" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="627340558493043" type="Audio">
+                    <param id="0" name="Audio file">It Happened (Game Song)</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">-10</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
             </actions>
         </event-block>
     </events>
