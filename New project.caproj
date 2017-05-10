@@ -122,12 +122,12 @@
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="419167668114290" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\gene\Downloads\game_art\game_art\Level2_Enemy.png">
                         <collision-poly>
-                            <point x="0.486842" y="0.203947" />
-                            <point x="0.940789" y="0.65296" />
-                            <point x="0.615132" y="0.618421" />
-                            <point x="0.483553" y="0.615131" />
-                            <point x="0.363487" y="0.615131" />
-                            <point x="0.0328947" y="0.646381" />
+                            <point x="0.796053" y="0.486842" />
+                            <point x="0.34704" y="0.940789" />
+                            <point x="0.381579" y="0.615132" />
+                            <point x="0.384869" y="0.483553" />
+                            <point x="0.384869" y="0.363487" />
+                            <point x="0.353619" y="0.0328947" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -268,6 +268,7 @@
             <instance-variables>
                 <instance-variable name="score" sid="799223672426637" type="number" />
                 <instance-variable name="speed" sid="491006993544919" type="number" />
+                <instance-variable name="damage" sid="909560545994688" type="number" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="8Direction" sid="201924555028759">
@@ -303,16 +304,16 @@
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="680523874221223" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\gene\Downloads\game_art\game_art\Level1_Enemy.png">
                         <collision-poly>
-                            <point x="0.373355" y="0.373355" />
-                            <point x="0.412007" y="0.192434" />
-                            <point x="0.521382" y="0.1875" />
-                            <point x="0.566612" y="0.370888" />
-                            <point x="0.748355" y="0.40954" />
-                            <point x="0.746711" y="0.553454" />
-                            <point x="0.639803" y="0.62171" />
-                            <point x="0.296053" y="0.616776" />
-                            <point x="0.192434" y="0.555921" />
-                            <point x="0.197369" y="0.400494" />
+                            <point x="0.626645" y="0.373355" />
+                            <point x="0.807566" y="0.412007" />
+                            <point x="0.8125" y="0.521382" />
+                            <point x="0.629112" y="0.566612" />
+                            <point x="0.59046" y="0.748355" />
+                            <point x="0.446546" y="0.746711" />
+                            <point x="0.37829" y="0.639803" />
+                            <point x="0.383224" y="0.296053" />
+                            <point x="0.444079" y="0.192434" />
+                            <point x="0.599506" y="0.197369" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -376,14 +377,14 @@
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="996267451990470" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\gene\Downloads\game_art\game_art\Level3_Enemy.png">
                         <collision-poly>
-                            <point x="0.125" y="0.125" />
-                            <point x="0.475329" y="0.182566" />
-                            <point x="0.828947" y="0.121711" />
-                            <point x="0.853618" y="0.544408" />
-                            <point x="0.791118" y="0.735197" />
-                            <point x="0.475329" y="0.990131" />
-                            <point x="0.184211" y="0.736842" />
-                            <point x="0.09375" y="0.5" />
+                            <point x="0.875" y="0.125" />
+                            <point x="0.817434" y="0.475329" />
+                            <point x="0.878289" y="0.828947" />
+                            <point x="0.455592" y="0.853618" />
+                            <point x="0.264803" y="0.791118" />
+                            <point x="0.00986898" y="0.475329" />
+                            <point x="0.263158" y="0.184211" />
+                            <point x="0.5" y="0.09375" />
                         </collision-poly>
                     </frame>
                 </animation>

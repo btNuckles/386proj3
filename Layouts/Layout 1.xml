@@ -3742,7 +3742,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <health>10</health>
+                        <health>8</health>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight">
@@ -3777,7 +3777,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <health>10</health>
+                        <health>20</health>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight">
@@ -3917,6 +3917,7 @@
                     <instance-variables>
                         <score>0</score>
                         <speed>175</speed>
+                        <damage>1</damage>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="8Direction">
@@ -3954,7 +3955,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <health>10</health>
+                        <health>8</health>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight">
@@ -3989,7 +3990,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <health>10</health>
+                        <health>8</health>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight">
@@ -4024,7 +4025,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <health>10</health>
+                        <health>8</health>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight">
@@ -4059,7 +4060,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <health>10</health>
+                        <health>8</health>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight">
@@ -4094,7 +4095,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <health>10</health>
+                        <health>8</health>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight">
@@ -4129,7 +4130,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <health>10</health>
+                        <health>8</health>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight">
@@ -4164,7 +4165,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <health>10</health>
+                        <health>8</health>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight">
@@ -4199,7 +4200,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <health>10</health>
+                        <health>20</health>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight">
@@ -4234,7 +4235,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <health>10</health>
+                        <health>20</health>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight">
@@ -4269,7 +4270,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <health>10</health>
+                        <health>20</health>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight">
@@ -4304,7 +4305,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <health>10</health>
+                        <health>20</health>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight">
@@ -4339,7 +4340,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <health>10</health>
+                        <health>20</health>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight">
@@ -4374,7 +4375,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <health>10</health>
+                        <health>20</health>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight">
@@ -4409,7 +4410,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <health>10</health>
+                        <health>20</health>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight">
@@ -4444,7 +4445,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <health>10</health>
+                        <health>20</health>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight">
@@ -4479,7 +4480,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <health>10</health>
+                        <health>20</health>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight">
@@ -4794,7 +4795,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <health>10</health>
+                        <health>8</health>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight">
@@ -5094,7 +5095,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <health>10</health>
+                        <health>8</health>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight">

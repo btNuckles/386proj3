@@ -31,6 +31,10 @@
                     <param id="1" name="Layer">1</param>
                     <param id="2" name="Image point">0</param>
                 </action>
+                <action id="-10" name="Set value" sid="462928626981616" type="laser">
+                    <param id="0" name="Instance variable">damage</param>
+                    <param id="1" name="Value">Player.damage</param>
+                </action>
                 <action id="0" name="Play" sid="146073398413396" type="Audio">
                     <param id="0" name="Audio file">Player1_Laser_Sound</param>
                     <param id="2" name="Loop">0</param>
@@ -115,12 +119,6 @@
                 <action id="-12" name="Subtract from" sid="523816012404710" type="monster3">
                     <param id="0" name="Instance variable">health</param>
                     <param id="1" name="Value">laser.damage</param>
-                </action>
-                <action id="0" name="Play" sid="301533421232687" type="Audio">
-                    <param id="0" name="Audio file">Level3_Enemy_Death_Sound</param>
-                    <param id="2" name="Loop">0</param>
-                    <param id="3" name="Volume">-30</param>
-                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
                 </action>
             </actions>
         </event-block>
@@ -353,10 +351,10 @@
                     <param id="1" name="Layer">1</param>
                     <param id="2" name="Image point">0</param>
                 </action>
-                <action id="0" name="Play" sid="212232905405804" type="Audio">
-                    <param id="0" name="Audio file">Level3_Enemy_Bullet_Sound</param>
+                <action id="0" name="Play" sid="663991943727256" type="Audio">
+                    <param id="0" name="Audio file">Level2_Enemy_Bullet_Sound</param>
                     <param id="2" name="Loop">0</param>
-                    <param id="3" name="Volume">-20</param>
+                    <param id="3" name="Volume">0</param>
                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
                 </action>
             </actions>
@@ -377,9 +375,9 @@
                     <param id="2" name="Image point">0</param>
                 </action>
                 <action id="0" name="Play" sid="682325201476290" type="Audio">
-                    <param id="0" name="Audio file">It Happened (Game Song)</param>
+                    <param id="0" name="Audio file">Level3_Enemy_Bullet_Sound</param>
                     <param id="2" name="Loop">0</param>
-                    <param id="3" name="Volume">-20</param>
+                    <param id="3" name="Volume">0</param>
                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
                 </action>
             </actions>
@@ -451,10 +449,6 @@
                     <param id="0" name="Instance variable">score</param>
                     <param id="1" name="Value">1</param>
                 </action>
-                <action id="-11" name="Add to" sid="372176262263346" type="laser">
-                    <param id="0" name="Instance variable">damage</param>
-                    <param id="1" name="Value">1</param>
-                </action>
             </actions>
         </event-block>
         <event-block sid="463542009401201">
@@ -479,12 +473,14 @@
                 <condition id="-19" name="On destroyed" sid="745008528644670" type="monster2" />
             </conditions>
             <actions>
+                <action id="0" name="Play" sid="237024028419913" type="Audio">
+                    <param id="0" name="Audio file">Level2_Enemy_Death</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
                 <action id="-11" name="Add to" sid="709319729165833" type="player">
                     <param id="0" name="Instance variable">score</param>
-                    <param id="1" name="Value">1</param>
-                </action>
-                <action id="-11" name="Add to" sid="662658912113867" type="laser">
-                    <param id="0" name="Instance variable">damage</param>
                     <param id="1" name="Value">1</param>
                 </action>
             </actions>
@@ -511,12 +507,14 @@
                 <condition id="-19" name="On destroyed" sid="607787247222059" type="monster3" />
             </conditions>
             <actions>
+                <action id="0" name="Play" sid="751141059176741" type="Audio">
+                    <param id="0" name="Audio file">Level3_Enemy_Death_Sound</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-30</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
                 <action id="-11" name="Add to" sid="393286994147123" type="player">
                     <param id="0" name="Instance variable">score</param>
-                    <param id="1" name="Value">1</param>
-                </action>
-                <action id="-11" name="Add to" sid="905506203265380" type="laser">
-                    <param id="0" name="Instance variable">damage</param>
                     <param id="1" name="Value">1</param>
                 </action>
             </actions>
@@ -693,7 +691,7 @@
                 <condition id="-7" name="Compare instance variable" sid="575908901622219" type="player">
                     <param id="0" name="Instance variable">score</param>
                     <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">28</param>
+                    <param id="2" name="Value">29</param>
                 </condition>
             </conditions>
             <actions>
@@ -756,9 +754,9 @@
             <actions>
                 <action id="-9" name="Destroy" sid="530603678112549" type="damageUp" />
                 <action id="-9" name="Destroy" sid="541750215655928" type="speedBoost" />
-                <action id="-11" name="Add to" sid="303253307747654" type="laser">
+                <action id="-11" name="Add to" sid="598700193744356" type="player">
                     <param id="0" name="Instance variable">damage</param>
-                    <param id="1" name="Value">10</param>
+                    <param id="1" name="Value">2</param>
                 </action>
             </actions>
         </event-block>
@@ -773,10 +771,13 @@
                 <action id="-9" name="Destroy" sid="484933918628462" type="damageUp" />
                 <action id="-11" name="Add to" sid="942102151291296" type="player">
                     <param id="0" name="Instance variable">speed</param>
-                    <param id="1" name="Value">200</param>
+                    <param id="1" name="Value">100</param>
                 </action>
                 <action behavior="8Direction" id="3" name="Set speed" sid="461984068678159" type="player">
                     <param id="0" name="Speed">player.speed</param>
+                </action>
+                <action behavior="8Direction" id="4" name="Set max speed" sid="714674576869596" type="player">
+                    <param id="0" name="Max Speed">player.speed</param>
                 </action>
             </actions>
         </event-block>
@@ -789,9 +790,9 @@
             <actions>
                 <action id="-9" name="Destroy" sid="267580424697418" type="damageUp2" />
                 <action id="-9" name="Destroy" sid="322062195355281" type="speedBoost2" />
-                <action id="-11" name="Add to" sid="980599791110522" type="laser">
+                <action id="-11" name="Add to" sid="585497154319276" type="player">
                     <param id="0" name="Instance variable">damage</param>
-                    <param id="1" name="Value">10</param>
+                    <param id="1" name="Value">2</param>
                 </action>
             </actions>
         </event-block>
@@ -806,7 +807,7 @@
                 <action id="-9" name="Destroy" sid="341558370292027" type="speedBoost2" />
                 <action id="-11" name="Add to" sid="297290639748675" type="player">
                     <param id="0" name="Instance variable">speed</param>
-                    <param id="1" name="Value">200</param>
+                    <param id="1" name="Value">100</param>
                 </action>
                 <action behavior="8Direction" id="3" name="Set speed" sid="280518950745989" type="player">
                     <param id="0" name="Speed">player.speed</param>
@@ -851,6 +852,39 @@
                     <param id="3" name="Volume">-10</param>
                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
                 </action>
+            </actions>
+        </event-block>
+        <event-block sid="237522746508470">
+            <conditions>
+                <condition behavior="Bullet" id="1" name="Compare distance travelled" sid="505942793613031" type="laser">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Distance">700</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="251024502441031" type="laser" />
+            </actions>
+        </event-block>
+        <event-block sid="837647789211316">
+            <conditions>
+                <condition behavior="Bullet" id="1" name="Compare distance travelled" sid="926273134207153" type="monster2laser">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Distance">700</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="724772511673231" type="monster2laser" />
+            </actions>
+        </event-block>
+        <event-block sid="993273781958775">
+            <conditions>
+                <condition behavior="Bullet" id="1" name="Compare distance travelled" sid="547818587347943" type="monster3laser">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Distance">700</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="937635172476965" type="monster3laser" />
             </actions>
         </event-block>
     </events>
